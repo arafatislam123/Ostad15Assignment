@@ -9,11 +9,11 @@ class ProfileController extends Controller
 {
     public function index($id)
     {
-        // Declare variables
+        
         $name = "Donal Trump";
         $age = "75";
 
-        // Store the $id, $name, and $age in the $data array
+  
         $data = [
             'id' => $id,
             'name' => $name,
