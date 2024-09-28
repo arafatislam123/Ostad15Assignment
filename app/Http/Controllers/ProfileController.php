@@ -20,7 +20,7 @@ class ProfileController extends Controller
             'age' => $age
         ];
 
-        // Create a cookie
+       
         $cookie_name = 'access_token';
         $cookie_value = '123-XYZ';
         $minutes = 1;
@@ -29,7 +29,7 @@ class ProfileController extends Controller
         $secure = false;
         $httpOnly = true;
 
-        // Set the cookie and return the response
+      
         return response()->json($data, 200)
             ->cookie($cookie_name, $cookie_value, $minutes, $path, $domain, $secure, $httpOnly);
     }
